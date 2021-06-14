@@ -6,16 +6,14 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
+
+        publicPath: PATHS.build
     },
     module: {
         rules: [
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                    },
-                ],
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                loader: 'file-loader',
             },
         ],
     },
