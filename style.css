@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3 {
+      font-family: Sen;
+  }
+
+  body{
+      font-family: Poppins;
+  }
+
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   overflow: hidden; 
+  }
+
+  nav a {
+    float: right;
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  .wrapper {
+    margin-top: 150px;
+  }
+
+  h3 {
+    padding: 15px;
+    float: left;
+    font-size: 3rem;
+  }
+
+  #content {
+      background-image: url('./images/dill.jpg')
+  }
