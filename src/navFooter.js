@@ -1,6 +1,8 @@
-export default function createNav() {
+import createHome from './Home';
+
+function createNav() {
     const nav = document.createElement('nav');
-    const content = document.querySelector('#content')
+    // const content = document.querySelector('#content')
 
     const homeButton = document.createElement('a');
     homeButton.href = 'link'
@@ -25,7 +27,18 @@ export default function createNav() {
     nav.appendChild(drinksButton);
     nav.appendChild(menuButton);
     nav.appendChild(homeButton);
-    content.appendChild(nav);
+    // content.appendChild(nav);
+
+    return nav;
 }
 
 
+export default function loadNav() {
+    const content = document.querySelector('#content');
+    const homeOverlay = document.createElement('div');
+    homeOverlay.classList.add('homeOverlay');
+    content.append(createNav());
+    content.append(createHome());
+    content.append(homeOverlay);
+    console.log(content);
+}

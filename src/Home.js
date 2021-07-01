@@ -1,4 +1,4 @@
-function createHome() {
+export default function createHome() {
     const wrapper = document.createElement('div');
     wrapper.classList.add('wrapper');
 
@@ -18,16 +18,10 @@ function createHome() {
     browse.href = "menu link";
     browse.classList.add('wrapperChild');
 
-    wrapper.appendChild(h2)
-    wrapper.appendChild(h1)
-    wrapper.appendChild(button)
-    wrapper.appendChild(browse)
+    wrapper.appendChild(h2);
+    wrapper.appendChild(h1);
+    wrapper.appendChild(button);
+    wrapper.append(browse);
 
     return wrapper;
-}
-
-export default function loadContent() {
-    const content = document.querySelector('#content');
-    content.textContent = "";
-    content.appendChild(createHome())
 }

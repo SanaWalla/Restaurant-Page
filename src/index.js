@@ -1,6 +1,5 @@
-import loadContent from './Home';
-import createNav from './navFooter';
+import loadNav from './navFooter';
+// import loadContent from './Home';
 
-
-loadContent();
-createNav();
+// loadContent();
+loadNav();
