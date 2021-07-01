@@ -1,6 +1,3 @@
-import shapes from './shapes.jpg';
-
-
 function createHome() {
     const wrapper = document.createElement('div');
     wrapper.classList.add('wrapper');
@@ -21,14 +18,10 @@ function createHome() {
     browse.href = "menu link";
     browse.classList.add('wrapperChild');
 
-    const homeImage = document.createElement('img');
-    homeImage.src = shapes;
-
     wrapper.appendChild(h2)
     wrapper.appendChild(h1)
     wrapper.appendChild(button)
     wrapper.appendChild(browse)
-    wrapper.appendChild(homeImage)
 
     return wrapper;
 }
