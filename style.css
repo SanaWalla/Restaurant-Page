@@ -51,7 +51,23 @@ html {
     float: left;
     font-size: 3rem;
   }
-
+/* 
   #content {
-      background-image: url('./images/dill.jpg')
+      background-image: url('./images/sage.jpg');
+      background-position: center;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: auto 800px;
+  } */
+
+  .homeOverlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url('./images/sage.jpg');
+      background-position: center;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: auto 800px;
   }
