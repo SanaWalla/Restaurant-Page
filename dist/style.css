@@ -43,7 +43,8 @@ html {
   }
 
   .wrapper {
-    margin-top: 150px;
+    margin-top: 250px;
+    padding-left: 50px;
   }
 
   h3 {
@@ -51,23 +52,18 @@ html {
     float: left;
     font-size: 3rem;
   }
-/* 
-  #content {
-      background-image: url('./images/sage.jpg');
-      background-position: center;
-      height: 500px;
-      background-repeat: no-repeat;
-      background-size: auto 800px;
-  } */
 
   .homeOverlay {
     display: block;
     position: absolute;
+    z-index: -1;
     top: 0;
     width: 100%;
-    background-image: url('./images/sage.jpg');
-      background-position: center;
-      height: 500px;
-      background-repeat: no-repeat;
-      background-size: auto 800px;
+    height: 600px;
+    background-image: url('./images/appetizer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+      
   }
