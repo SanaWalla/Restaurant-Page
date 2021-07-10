@@ -32,6 +32,21 @@ function createNav() {
     return nav;
 }
 
+function createFooter() {
+    const footer = document.createElement('div');
+    footer.classList.add('footer');
+    const pFooter = document.createElement('p')
+    pFooter.innerHTML = 'Concept by Sana Khalid';
+    const gitLink = document.createElement('a');
+    gitLink.href = 'https://github.com/SanaWalla';
+    gitLink.innerHTML = 'GitHub';
+
+
+    footer.append(pFooter);
+    footer.append(gitLink);
+    return footer;
+}
+
 
 export default function loadNav() {
     const content = document.querySelector('#content');
@@ -40,5 +55,6 @@ export default function loadNav() {
     content.append(createNav());
     content.append(createHome());
     content.append(homeOverlay);
+    content.append(createFooter());
     console.log(content);
 }

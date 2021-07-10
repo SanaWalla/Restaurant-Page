@@ -36,7 +36,7 @@ html {
   nav a {
     float: right;
     display: block;
-    padding: 18px;
+    padding: 10px;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
@@ -63,7 +63,36 @@ html {
     background-image: url('./images/appetizer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    
-      
+    background-position: top; 
+  }
+
+  .wrapper h2 {
+    font-size: 16px;
+  }
+
+  .wrapper h1 {
+    font-size: 50px;
+    margin: 15px 0;
+    letter-spacing: 3px;
+  }
+
+  .wrapper button {
+    padding: 15px 30px;
+    background-color: rgb(213, 213, 213);
+    border: none;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    background-color: rgba(154, 151, 151, 0.2);
+    text-align: center;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: rgb(49, 45, 101);
   }

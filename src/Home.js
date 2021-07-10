@@ -7,7 +7,7 @@ export default function createHome() {
     h2.classList.add('wrapperChild');
 
     const h1 = document.createElement('h1');
-    h1.textContent = " Herbs, Spice, Aroma."
+    h1.textContent = " herbs, spice, aroma."
     h1.classList.add('wrapperChild');
 
     const button = document.createElement('button');
