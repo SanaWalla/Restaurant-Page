@@ -87,7 +87,6 @@ html {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 2%;
     background-color: rgba(154, 151, 151, 0.2);
     text-align: center;
   }
@@ -95,4 +94,31 @@ html {
   .footer a {
     text-decoration: none;
     color: rgb(49, 45, 101);
+  }
+
+  .tabcontent {
+    /* display: none; */
+    width: 100%;
+    height:  900px;
+    background-color: white;
+    background-image: url('./images/dinner2.jpg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: translateY(-180px);
+  }
+
+  .tabcontent h2 {
+    font-size: 30px;
+    padding: 15px;
+    letter-spacing: 3px;
+    
+  }
+
+  .tabcontent h2:first-child {
+    padding-top: 150px;
+  }
+
+  .tabcontent p {
+    font-size: 15px;
   }
