@@ -102,10 +102,11 @@ html {
     height:  900px;
     background-color: white;
     background-image: url('./images/dinner2.jpg');
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: right;
     transform: translateY(-180px);
+    padding-left: 30px;
   }
 
   .tabcontent h2 {
@@ -121,4 +122,8 @@ html {
 
   .tabcontent p {
     font-size: 15px;
+  }
+  .tabcontent h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
   }
