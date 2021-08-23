@@ -2,6 +2,9 @@ function createMenu() {
     const tabContent = document.createElement('div');
     tabContent.classList.add('tabcontent');
 
+    const menuHeading = document.createElement('h1');
+    menuHeading.innerHTML = "Menu";
+
     const sage = document.createElement('h2');
     sage.innerHTML = "sage";
     const sageP = document.createElement('p')
@@ -38,7 +41,7 @@ function createMenu() {
     oreganoP.innerHTML = "beef lasagna, salad"
     oregano.classList.add('menuItem');
 
-    tabContent.append(sage, cilantro, parsley, dill, chive, oregano);
+    tabContent.append(menuHeading, sage, cilantro, parsley, dill, chive, oregano);
     sage.append(sageP);
     cilantro.append(cilantroP);
     parsley.append(parsleyP);
@@ -52,3 +55,4 @@ export default function loadMenu() {
     const content = document.querySelector('#content');
     content.append(createMenu());
 }
+
