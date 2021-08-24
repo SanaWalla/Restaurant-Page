@@ -5,17 +5,21 @@ function createNav() {
     // const content = document.querySelector('#content')
 
     const homeButton = document.createElement('a');
-    homeButton.href = 'link'
-    homeButton.innerHTML = 'Home'
+    homeButton.href = '';
+    homeButton.innerHTML = 'Home';
+    homeButton.classList.add('tabLinks');
     const menuButton = document.createElement('a');
-    menuButton.href = 'link';
-    menuButton.innerHTML = 'Menu'
+    menuButton.href = '';
+    menuButton.innerHTML = 'Menu';
+    menuButton.classList.add('menuTabLink');
     const drinksButton = document.createElement('a');
-    drinksButton.href = 'link';
-    drinksButton.innerHTML = 'Drinks'
+    drinksButton.href = '';
+    drinksButton.innerHTML = 'Drinks';
+    drinksButton.classList.add('tabLinks');
     const aboutButton = document.createElement('a');
-    aboutButton.href = 'link';
-    aboutButton.innerHTML = 'About'
+    aboutButton.href = '';
+    aboutButton.innerHTML = 'About';
+    aboutButton.classList.add('tabLinks')
 
 
     const arome = document.createElement('h3');

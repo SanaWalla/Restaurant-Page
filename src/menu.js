@@ -1,6 +1,7 @@
 function createMenu() {
     const tabContent = document.createElement('div');
     tabContent.classList.add('tabcontent');
+    tabContent.id = 'menu';
 
     const menuHeading = document.createElement('h1');
     menuHeading.innerHTML = "Menu";

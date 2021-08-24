@@ -4,4 +4,5 @@ import displayTab from './displayTab'
 
 loadNav();
 loadMenu();
-displayTab();
+displayTab('.menuTabLink', 'menu');
+
