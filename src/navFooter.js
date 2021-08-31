@@ -2,15 +2,15 @@ import createHome from './Home';
 
 function createNav() {
     const nav = document.createElement('nav');
-    // const content = document.querySelector('#content')
-
     const homeButton = document.createElement('a');
     homeButton.href = '';
     homeButton.innerHTML = 'Home';
+    homeButton.classList.add('homeTabLink');
     homeButton.classList.add('tabLinks');
     const menuButton = document.createElement('a');
     menuButton.href = '';
     menuButton.innerHTML = 'Menu';
+    menuButton.classList.add('tabLinks');
     menuButton.classList.add('menuTabLink');
     const drinksButton = document.createElement('a');
     drinksButton.href = '';
@@ -20,7 +20,6 @@ function createNav() {
     aboutButton.href = '';
     aboutButton.innerHTML = 'About';
     aboutButton.classList.add('tabLinks')
-
 
     const arome = document.createElement('h3');
     arome.innerHTML = "arôme";

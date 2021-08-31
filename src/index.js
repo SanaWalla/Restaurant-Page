@@ -5,4 +5,4 @@ import displayTab from './displayTab'
 loadNav();
 loadMenu();
 displayTab('.menuTabLink', 'menu');
-
+displayTab('.homeTabLink', 'home');

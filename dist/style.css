@@ -97,7 +97,7 @@ html {
   }
 
   .tabcontent {
-    /* display: none; */
+    display: none;
     width: 100%;
     height:  900px;
     background-color: white;
@@ -126,4 +126,8 @@ html {
   .tabcontent h1 {
     font-size: 45px;
     letter-spacing: 3px;
+  }
+
+  .active {
+    display: block;
   }

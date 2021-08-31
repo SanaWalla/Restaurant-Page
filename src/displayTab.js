@@ -1,26 +1,34 @@
-export default function displayTab(tablink, tabName) {
-    const tabContentDisplay = document.querySelectorAll('.tabcontent');
+export default function displayTab(tablink, tabID) {
+    const tabContent = document.querySelectorAll('.tabContent');
+    const tabLinks = document.querySelectorAll('.tabLinks');
 
 
-    tabContentDisplay.forEach(function (tabDisplay) {
-        tabDisplay.style.display = 'none';
+    document.querySelector(tablink).addEventListener('click', function (e) {
+        e.preventDefault();
+
+        tabLinks.forEach(function (TL) {
+            TL.classList.remove('active');
+        })
+
+        tabContent.forEach(function (Tcontent) {
+            Tcontent.style.display = 'none';
+        })
+
+        document.getElementById(tabID).style.display = 'block'
+
+        document.querySelector(tablink).classList.add('active');
+
     })
-
-    document.querySelector(tablink).classList.remove('active');
-
-    // tabLinks.forEach(function (tabLink) {
-    //     tabLink.addEventListener('click', function () {
-    //         console.log('hello')
-    //         document.getElementById(tabName).style.display = 'block';
-    //         document.getElementById(tabName).classList.add('active');
-    //     })
-    // })
-
-    document.querySelector(tablink).addEventListener('click', function () {
-        console.log('hello')
-        document.getElementById(tabName).style.display = 'block';
-        document.getElementById(tabName).classList.add('active');
-    })
-
 }
+
+function displayHome(tablink) {
+    document.querySelector(tablink).addEventListener('click', function (e) {
+        e.preventDefault();
+        const tabContent = document.querySelectorAll('.tabContent');
+        tabContent.forEach(function (Tcontent) {
+            Tcontent.style.display = 'none';
+        })
+    })
+}
+
 
