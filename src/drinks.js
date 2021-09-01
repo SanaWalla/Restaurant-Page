@@ -21,5 +21,11 @@ function createDrinks() {
     const lemonade = document.createElement('h2');
     lemonade.innerHTML = "Rosemary Lemonade";
 
+    tabContent.append(drinksHeading, mojito, gimlet, negroni, julep, lemonade);
+    return tabContent;
+}
 
+export default function loadDrinks() {
+    const content = document.querySelector('#content');
+    content.append(createDrinks());
 }

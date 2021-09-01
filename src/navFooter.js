@@ -16,6 +16,7 @@ function createNav() {
     drinksButton.href = '';
     drinksButton.innerHTML = 'Drinks';
     drinksButton.classList.add('tabLinks');
+    drinksButton.classList.add('drinksTabLink');
     const aboutButton = document.createElement('a');
     aboutButton.href = '';
     aboutButton.innerHTML = 'About';

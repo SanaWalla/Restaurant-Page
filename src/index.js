@@ -1,8 +1,11 @@
 import loadNav from './navFooter';
 import loadMenu from './menu'
-import displayTab from './displayTab'
+import { displayTab, displayHome } from './displayTab'
+import loadDrinks from './drinks'
 
 loadNav();
 loadMenu();
 displayTab('.menuTabLink', 'menu');
-displayTab('.homeTabLink', 'home');
+displayHome('.homeTabLink');
+loadDrinks();
+displayTab('.drinksTabLink', 'drinks');

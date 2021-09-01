@@ -1,5 +1,5 @@
-export default function displayTab(tablink, tabID) {
-    const tabContent = document.querySelectorAll('.tabContent');
+function displayTab(tablink, tabID) {
+    const tabContent = document.querySelectorAll('.tabcontent');
     const tabLinks = document.querySelectorAll('.tabLinks');
 
 
@@ -24,7 +24,7 @@ export default function displayTab(tablink, tabID) {
 function displayHome(tablink) {
     document.querySelector(tablink).addEventListener('click', function (e) {
         e.preventDefault();
-        const tabContent = document.querySelectorAll('.tabContent');
+        const tabContent = document.querySelectorAll('.tabcontent');
         tabContent.forEach(function (Tcontent) {
             Tcontent.style.display = 'none';
         })
@@ -32,3 +32,4 @@ function displayHome(tablink) {
 }
 
 
+export { displayTab, displayHome }
