@@ -20,7 +20,8 @@ function createNav() {
     const aboutButton = document.createElement('a');
     aboutButton.href = '';
     aboutButton.innerHTML = 'About';
-    aboutButton.classList.add('tabLinks')
+    aboutButton.classList.add('tabLinks');
+    aboutButton.classList.add('aboutTabLink');
 
     const arome = document.createElement('h3');
     arome.innerHTML = "arôme";

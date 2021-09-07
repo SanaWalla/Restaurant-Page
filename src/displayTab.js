@@ -24,6 +24,10 @@ function displayTab(tablink, tabID) {
 function displayHome(tablink) {
     document.querySelector(tablink).addEventListener('click', function (e) {
         e.preventDefault();
+        const tabLinks = document.querySelectorAll('.tabLinks');
+        tabLinks.forEach(function (TL) {
+            TL.classList.remove('active');
+        })
         const tabContent = document.querySelectorAll('.tabcontent');
         tabContent.forEach(function (Tcontent) {
             Tcontent.style.display = 'none';

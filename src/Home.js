@@ -1,7 +1,6 @@
 export default function createHome() {
     const wrapper = document.createElement('div');
     wrapper.classList.add('wrapper');
-    wrapper.classList.add('active');
     wrapper.id = 'home';
 
     const h2 = document.createElement('h2')
