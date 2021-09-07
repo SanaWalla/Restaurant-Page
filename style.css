@@ -59,8 +59,8 @@ html {
     z-index: -1;
     top: 0;
     width: 100%;
-    height: 600px;
-    background-image: url('./images/appetizer.jpg');
+    height: 1000px;
+    background-image: url('./images/meal-right.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top; 
@@ -78,7 +78,7 @@ html {
 
   .wrapper button {
     padding: 15px 30px;
-    background-color: rgb(213, 213, 213);
+    background-color: rgb(191, 187, 187);
     border: none;
   }
 
@@ -101,11 +101,7 @@ html {
     width: 100%;
     height:  900px;
     background-color: white;
-    background-image: url('./images/dinner2.jpg');
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: right;
-    transform: translateY(-180px);
+    
     padding-left: 30px;
   }
 
@@ -128,6 +124,42 @@ html {
     letter-spacing: 3px;
   }
 
+  .tabcontent h4 {
+    font-size: 20px;
+  }
+
+  #about h4{
+    width: 400px;
+    padding-top: 100px;
+    padding-left:60px;
+  }
+
+  #menu {
+    background-image: url('./images/menuO.jpg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: translateY(-180px);
+  }
+
+  #drinks {
+    background-image: url('./images/drinksO.jpg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: translateY(-180px);
+  }
+
+  #about {
+    background-image: url('./images/about.jpg');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: translateY(-180px);
+  }
+
   .active {
-    display: block;
+    background-color: rgba(245, 245, 245, 0.318);
+    border-radius: 20px;
+    
   }

@@ -1,1 +1,146 @@
-(()=>{"use strict";function e(e,n){const t=document.querySelectorAll(".tabcontent"),c=document.querySelectorAll(".tabLinks");document.querySelector(e).addEventListener("click",(function(a){a.preventDefault(),c.forEach((function(e){e.classList.remove("active")})),t.forEach((function(e){e.style.display="none"})),document.getElementById(n).style.display="block",document.querySelector(e).classList.add("active")}))}!function(){const e=document.querySelector("#content"),n=document.createElement("div");n.classList.add("homeOverlay"),e.append(function(){const e=document.createElement("nav"),n=document.createElement("a");n.href="",n.innerHTML="Home",n.classList.add("homeTabLink"),n.classList.add("tabLinks");const t=document.createElement("a");t.href="",t.innerHTML="Menu",t.classList.add("tabLinks"),t.classList.add("menuTabLink");const c=document.createElement("a");c.href="",c.innerHTML="Drinks",c.classList.add("tabLinks"),c.classList.add("drinksTabLink");const a=document.createElement("a");a.href="",a.innerHTML="About",a.classList.add("tabLinks");const d=document.createElement("h3");return d.innerHTML="arôme",e.appendChild(d),e.appendChild(a),e.appendChild(c),e.appendChild(t),e.appendChild(n),e}()),e.append(function(){const e=document.createElement("div");e.classList.add("wrapper"),e.classList.add("active"),e.id="home";const n=document.createElement("h2");n.textContent="123 Fake Street, St. Helena, CA 45678",n.classList.add("wrapperChild");const t=document.createElement("h1");t.textContent=" herbs, spice, aroma.",t.classList.add("wrapperChild");const c=document.createElement("button");c.textContent="Reserve Table",c.classList.add("wrapperChild");const a=document.createElement("a");return a.href="menu link",a.classList.add("wrapperChild"),e.appendChild(n),e.appendChild(t),e.appendChild(c),e.append(a),e}()),e.append(n),e.append(function(){const e=document.createElement("div");e.classList.add("footer");const n=document.createElement("p");n.innerHTML="Concept by Sana Khalid";const t=document.createElement("a");return t.href="https://github.com/SanaWalla",t.innerHTML="GitHub",e.append(n),e.append(t),e}()),console.log(e)}(),document.querySelector("#content").append(function(){const e=document.createElement("div");e.classList.add("tabcontent"),e.id="menu";const n=document.createElement("h1");n.innerHTML="Menu";const t=document.createElement("h2");t.innerHTML="sage";const c=document.createElement("p");c.innerHTML="fettucine, broccoli, tilapia",t.classList.add("menuItem");const a=document.createElement("h2");a.innerHTML="cilantro";const d=document.createElement("p");d.innerHTML="enchiladas, cilantro rice, beans",a.classList.add("menuItem");const o=document.createElement("h2");o.innerHTML="parsley";const s=document.createElement("p");s.innerHTML="tabouleh, shawarma, pita",o.classList.add("menuItem");const r=document.createElement("h2");r.innerHTML="dill";const i=document.createElement("p");i.innerHTML="fried chicken, potatoes, dill ranch",r.classList.add("menuItem");const l=document.createElement("h2");l.innerHTML="chive";const m=document.createElement("p");m.innerHTML="mashed potatoes, steak, asparagus",l.classList.add("menuItem");const u=document.createElement("h2");u.innerHTML="oregano";const p=document.createElement("p");return p.innerHTML="beef lasagna, salad",u.classList.add("menuItem"),e.append(n,t,a,o,r,l,u),t.append(c),a.append(d),o.append(s),r.append(i),l.append(m),u.append(p),e}()),e(".menuTabLink","menu"),document.querySelector(".homeTabLink").addEventListener("click",(function(e){e.preventDefault(),document.querySelectorAll(".tabcontent").forEach((function(e){e.style.display="none"}))})),document.querySelector("#content").append(function(){const e=document.createElement("div");e.classList.add("tabcontent"),e.id="drinks";const n=document.createElement("h1");n.innerHTML="Drinks";const t=document.createElement("h2");t.innerHTML="Mint Mojito";const c=document.createElement("h2");c.innerHTML="Sage Gimlet";const a=document.createElement("h2");a.innerHTML="Tarragon Negroni";const d=document.createElement("h2");d.innerHTML="Thyme Julep";const o=document.createElement("h2");return o.innerHTML="Rosemary Lemonade",e.append(n,t,c,a,d,o),e}()),e(".drinksTabLink","drinks")})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/Home.js":
+/*!*********************!*\
+  !*** ./src/Home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome() {\n    const wrapper = document.createElement('div');\n    wrapper.classList.add('wrapper');\n    wrapper.id = 'home';\n\n    const h2 = document.createElement('h2')\n    h2.textContent = \"123 Fake Street, St. Helena, CA 45678\"\n    h2.classList.add('wrapperChild');\n\n    const h1 = document.createElement('h1');\n    h1.textContent = \" herbs, spice, aroma.\"\n    h1.classList.add('wrapperChild');\n\n    const button = document.createElement('button');\n    button.textContent = \"Reserve Table\";\n    button.classList.add('wrapperChild');\n\n    const browse = document.createElement('a');\n    browse.href = \"menu link\";\n    browse.classList.add('wrapperChild');\n\n    wrapper.appendChild(h2);\n    wrapper.appendChild(h1);\n    wrapper.appendChild(button);\n    wrapper.append(browse);\n\n    return wrapper;\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/Home.js?");
+
+/***/ }),
+
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadAbout)\n/* harmony export */ });\nfunction createAbout() {\n    const tabContent = document.createElement('div');\n    tabContent.classList.add('tabcontent');\n    tabContent.id = 'about';\n\n    const aboutParagraph = document.createElement('h4');\n    aboutParagraph.innerHTML = \"arôme was created to savor dishes from around the world, with the focus on fresh herbs. Herbs define different foods, culture, and experiences. Curated with a rotating menu of seasonal foods, join us for a meal and an experience.\"\n\n    tabContent.append(aboutParagraph);\n    return tabContent;\n}\n\nfunction loadAbout() {\n    const content = document.querySelector('#content');\n    content.append(createAbout());\n}\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
+/***/ "./src/displayTab.js":
+/*!***************************!*\
+  !*** ./src/displayTab.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayTab\": () => (/* binding */ displayTab),\n/* harmony export */   \"displayHome\": () => (/* binding */ displayHome)\n/* harmony export */ });\nfunction displayTab(tablink, tabID) {\n    const tabContent = document.querySelectorAll('.tabcontent');\n    const tabLinks = document.querySelectorAll('.tabLinks');\n\n\n    document.querySelector(tablink).addEventListener('click', function (e) {\n        e.preventDefault();\n\n        tabLinks.forEach(function (TL) {\n            TL.classList.remove('active');\n        })\n\n        tabContent.forEach(function (Tcontent) {\n            Tcontent.style.display = 'none';\n        })\n\n        document.getElementById(tabID).style.display = 'block'\n\n        document.querySelector(tablink).classList.add('active');\n\n    })\n}\n\nfunction displayHome(tablink) {\n    document.querySelector(tablink).addEventListener('click', function (e) {\n        e.preventDefault();\n        const tabLinks = document.querySelectorAll('.tabLinks');\n        tabLinks.forEach(function (TL) {\n            TL.classList.remove('active');\n        })\n        const tabContent = document.querySelectorAll('.tabcontent');\n        tabContent.forEach(function (Tcontent) {\n            Tcontent.style.display = 'none';\n        })\n    })\n}\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/displayTab.js?");
+
+/***/ }),
+
+/***/ "./src/drinks.js":
+/*!***********************!*\
+  !*** ./src/drinks.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadDrinks)\n/* harmony export */ });\nfunction createDrinks() {\n    const tabContent = document.createElement('div');\n    tabContent.classList.add('tabcontent');\n    tabContent.id = 'drinks';\n\n    const drinksHeading = document.createElement('h1');\n    drinksHeading.innerHTML = \"Drinks\";\n\n    const mojito = document.createElement('h2');\n    mojito.innerHTML = \"Mint Mojito\";\n\n    const gimlet = document.createElement('h2');\n    gimlet.innerHTML = \"Sage Gimlet\";\n\n\n    const negroni = document.createElement('h2');\n    negroni.innerHTML = \"Tarragon Negroni\";\n\n\n    const julep = document.createElement('h2');\n    julep.innerHTML = \"Thyme Julep\";\n\n\n    const lemonade = document.createElement('h2');\n    lemonade.innerHTML = \"Rosemary Lemonade\";\n\n\n    tabContent.append(drinksHeading, mojito, gimlet, negroni, julep, lemonade);\n\n    return tabContent;\n}\n\nfunction loadDrinks() {\n    const content = document.querySelector('#content');\n    content.append(createDrinks());\n}\n\n//# sourceURL=webpack://restaurant-page/./src/drinks.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navFooter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navFooter */ \"./src/navFooter.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _displayTab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayTab */ \"./src/displayTab.js\");\n/* harmony import */ var _drinks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./drinks */ \"./src/drinks.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\n\n\n(0,_navFooter__WEBPACK_IMPORTED_MODULE_0__.default)();\n(0,_menu__WEBPACK_IMPORTED_MODULE_1__.default)();\n(0,_drinks__WEBPACK_IMPORTED_MODULE_3__.default)();\n(0,_about__WEBPACK_IMPORTED_MODULE_4__.default)();\n(0,_displayTab__WEBPACK_IMPORTED_MODULE_2__.displayTab)('.aboutTabLink', 'about');\n(0,_displayTab__WEBPACK_IMPORTED_MODULE_2__.displayTab)('.menuTabLink', 'menu');\n(0,_displayTab__WEBPACK_IMPORTED_MODULE_2__.displayHome)('.homeTabLink');\n\n(0,_displayTab__WEBPACK_IMPORTED_MODULE_2__.displayTab)('.drinksTabLink', 'drinks');\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadMenu)\n/* harmony export */ });\nfunction createMenu() {\n    const tabContent = document.createElement('div');\n    tabContent.classList.add('tabcontent');\n    tabContent.id = 'menu';\n\n    const menuHeading = document.createElement('h1');\n    menuHeading.innerHTML = \"Menu\";\n\n    const sage = document.createElement('h2');\n    sage.innerHTML = \"sage\";\n    const sageP = document.createElement('p')\n    sageP.innerHTML = \"fettucine, broccoli, tilapia\"\n    sage.classList.add('menuItem');\n\n    const cilantro = document.createElement('h2');\n    cilantro.innerHTML = \"cilantro\";\n    const cilantroP = document.createElement('p')\n    cilantroP.innerHTML = \"enchiladas, cilantro rice, beans\"\n    cilantro.classList.add('menuItem');\n\n    const parsley = document.createElement('h2');\n    parsley.innerHTML = \"parsley\";\n    const parsleyP = document.createElement('p')\n    parsleyP.innerHTML = \"tabouleh, shawarma, pita\"\n    parsley.classList.add('menuItem');\n\n    const dill = document.createElement('h2');\n    dill.innerHTML = \"dill\";\n    const dillP = document.createElement('p')\n    dillP.innerHTML = \"fried chicken, potatoes, dill ranch\"\n    dill.classList.add('menuItem');\n\n    const chive = document.createElement('h2');\n    chive.innerHTML = \"chive\";\n    const chiveP = document.createElement('p')\n    chiveP.innerHTML = \"mashed potatoes, steak, asparagus\"\n    chive.classList.add('menuItem');\n\n    const oregano = document.createElement('h2');\n    oregano.innerHTML = \"oregano\";\n    const oreganoP = document.createElement('p')\n    oreganoP.innerHTML = \"beef lasagna, salad\"\n    oregano.classList.add('menuItem');\n\n    tabContent.append(menuHeading, sage, cilantro, parsley, dill, chive, oregano);\n    sage.append(sageP);\n    cilantro.append(cilantroP);\n    parsley.append(parsleyP);\n    dill.append(dillP);\n    chive.append(chiveP);\n    oregano.append(oreganoP);\n    return tabContent;\n}\n\nfunction loadMenu() {\n    const content = document.querySelector('#content');\n    content.append(createMenu());\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/navFooter.js":
+/*!**************************!*\
+  !*** ./src/navFooter.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadNav)\n/* harmony export */ });\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home */ \"./src/Home.js\");\n\n\nfunction createNav() {\n    const nav = document.createElement('nav');\n    const homeButton = document.createElement('a');\n    homeButton.href = '';\n    homeButton.innerHTML = 'Home';\n    homeButton.classList.add('homeTabLink');\n    homeButton.classList.add('tabLinks');\n    const menuButton = document.createElement('a');\n    menuButton.href = '';\n    menuButton.innerHTML = 'Menu';\n    menuButton.classList.add('tabLinks');\n    menuButton.classList.add('menuTabLink');\n    const drinksButton = document.createElement('a');\n    drinksButton.href = '';\n    drinksButton.innerHTML = 'Drinks';\n    drinksButton.classList.add('tabLinks');\n    drinksButton.classList.add('drinksTabLink');\n    const aboutButton = document.createElement('a');\n    aboutButton.href = '';\n    aboutButton.innerHTML = 'About';\n    aboutButton.classList.add('tabLinks');\n    aboutButton.classList.add('aboutTabLink');\n\n    const arome = document.createElement('h3');\n    arome.innerHTML = \"arôme\";\n\n    nav.appendChild(arome);\n\n    nav.appendChild(aboutButton);\n    nav.appendChild(drinksButton);\n    nav.appendChild(menuButton);\n    nav.appendChild(homeButton);\n    // content.appendChild(nav);\n\n    return nav;\n}\n\nfunction createFooter() {\n    const footer = document.createElement('div');\n    footer.classList.add('footer');\n    const pFooter = document.createElement('p')\n    pFooter.innerHTML = 'Concept by Sana Khalid';\n    const gitLink = document.createElement('a');\n    gitLink.href = 'https://github.com/SanaWalla';\n    gitLink.innerHTML = 'GitHub';\n\n\n    footer.append(pFooter);\n    footer.append(gitLink);\n    return footer;\n}\n\n\nfunction loadNav() {\n    const content = document.querySelector('#content');\n    const homeOverlay = document.createElement('div');\n    homeOverlay.classList.add('homeOverlay');\n    content.append(createNav());\n    content.append((0,_Home__WEBPACK_IMPORTED_MODULE_0__.default)());\n    content.append(homeOverlay);\n    content.append(createFooter());\n    console.log(content);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/navFooter.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
