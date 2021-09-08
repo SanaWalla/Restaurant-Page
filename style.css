@@ -31,6 +31,7 @@ html {
    top: 0;
    width: 100%;
    overflow: hidden; 
+   animation: nav-load 1s ease-in;
   }
 
   nav a {
@@ -45,6 +46,10 @@ html {
   .wrapper {
     margin-top: 250px;
     padding-left: 50px;
+    animation: fadein 2s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   h3 {
@@ -52,7 +57,7 @@ html {
     float: left;
     font-size: 3rem;
   }
-
+  
   .homeOverlay {
     display: block;
     position: absolute;
@@ -162,4 +167,19 @@ html {
     background-color: rgba(245, 245, 245, 0.318);
     border-radius: 20px;
     
+  }
+
+  @keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @keyframes nav-load {
+    0%{
+      transform: translateY(-100%)
+    }
+
+    100%{
+      transform: translateY(0)
+    }
   }
