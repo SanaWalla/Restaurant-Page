@@ -141,17 +141,19 @@ html {
 
   #menu {
     background-image: url('./images/menuO.jpg');
-    background-size: 60%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: right;
+    background-position-y: top;
     transform: translateY(-180px);
   }
 
   #drinks {
     background-image: url('./images/drinksO.jpg');
-    background-size: 60%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: right;
+    background-position-y: top;
     transform: translateY(-180px);
   }
 
@@ -166,7 +168,6 @@ html {
   .active {
     background-color: rgba(245, 245, 245, 0.318);
     border-radius: 20px;
-    
   }
 
   @keyframes fadein {
