@@ -2,7 +2,6 @@ function displayTab(tablink, tabID) {
     const tabContent = document.querySelectorAll('.tabcontent');
     const tabLinks = document.querySelectorAll('.tabLinks');
 
-
     document.querySelector(tablink).addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -13,11 +12,8 @@ function displayTab(tablink, tabID) {
         tabContent.forEach(function (Tcontent) {
             Tcontent.style.display = 'none';
         })
-
         document.getElementById(tabID).style.display = 'block'
-
         document.querySelector(tablink).classList.add('active');
-
     })
 }
 
@@ -34,6 +30,5 @@ function displayHome(tablink) {
         })
     })
 }
-
 
 export { displayTab, displayHome }
